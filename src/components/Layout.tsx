@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X, ChevronRight, LogIn } from 'lucide-react';
+import { Menu, X, ChevronRight, LogIn, Palette } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { NAV_LINKS } from '../constants';
 
@@ -12,7 +12,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col md:flex-row bg-paper">
       {/* Mobile Header */}
       <div className="md:hidden flex items-center justify-between p-4 border-b border-accent/20 bg-paper/80 backdrop-blur-md sticky top-0 z-50">
-        <h1 className="text-xl font-serif font-bold tracking-tight">Fondation Vuillard Roussel</h1>
+        <div className="flex items-center gap-3">
+          <Palette size={24} className="text-accent" />
+          <h1 className="text-xl font-serif font-bold tracking-tight">Fondation Vuillard Roussel</h1>
+        </div>
         <button 
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className="p-2 text-accent"
@@ -34,6 +37,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             `}
           >
             <div className="mb-12">
+              <div className="flex items-center gap-2 mb-4">
+                <Palette size={32} className="text-accent" />
+              </div>
               <h1 className="text-2xl font-serif font-semibold leading-none mb-2">Fondation</h1>
               <p className="text-lg font-serif font-light text-accent tracking-widest uppercase">Vuillard Roussel</p>
             </div>
