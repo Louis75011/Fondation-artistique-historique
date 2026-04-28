@@ -76,9 +76,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </button>
               <div className="mt-6 text-[10px] text-muted flex flex-col gap-1">
                 <p>© ADAGP</p>
-                <div className="flex gap-4">
-                  <a href="#" className="hover:underline">Mentions légales</a>
-                  <a href="#" className="hover:underline">Contact</a>
+                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  <NavLink to="/mentions-legales" className="hover:underline">Mentions légales</NavLink>
+                  <NavLink to="/politique-confidentialite" className="hover:underline">Confidentialité</NavLink>
+                  <NavLink to="/accessibilite" className="hover:underline">Accessibilité</NavLink>
                 </div>
               </div>
             </div>

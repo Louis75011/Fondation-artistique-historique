@@ -16,6 +16,9 @@ import Expertises from './pages/Expertises';
 import Contact from './pages/Contact';
 import ArtistDetail from './pages/ArtistDetail';
 import CatalogueDetail from './pages/CatalogueDetail';
+import MentionsLegales from './pages/Legal/MentionsLegales';
+import PolitiqueConfidentialite from './pages/Legal/PolitiqueConfidentialite';
+import Accessibilite from './pages/Legal/Accessibilite';
 
 export default function App() {
   return (
@@ -32,6 +35,9 @@ export default function App() {
           <Route path="/scandale" element={<UNScandal />} />
           <Route path="/expertises" element={<Expertises />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/accessibilite" element={<Accessibilite />} />
         </Routes>
       </Layout>
     </BrowserRouter>
