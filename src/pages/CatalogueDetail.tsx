@@ -11,7 +11,7 @@ export default function CatalogueDetail() {
   if (!artist) return <div className="text-center py-20 font-serif">Catalogue non trouvé.</div>;
 
   const categories = [
-    { title: "Dessin", img: "https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&q=80&w=600", desc: "Le trait, la spontanéité, l'ébauche du génie." },
+    { title: "Dessin", img: "https://i.ibb.co/GfQ58mzF/page-coloration-personnages-animaux-bande-dessinee-mignons-11460-18971.jpg", desc: "Le trait, la spontanéité, l'ébauche du génie." },
     { title: "Peinture", img: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80&w=600", desc: "La couleur et la matière au service de l'émotion." },
     { title: "Gravure", img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600", desc: "La multiplicité de l'œuvre originale." },
     { title: artist.id === 'pierre-roussel' ? "Sculpture" : "Céramique", img: "https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&q=80&w=600", desc: "Le volume et la forme tangible." }
