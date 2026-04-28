@@ -15,6 +15,7 @@ import UNScandal from './pages/UNScandal';
 import Expertises from './pages/Expertises';
 import Contact from './pages/Contact';
 import ArtistDetail from './pages/ArtistDetail';
+import CatalogueDetail from './pages/CatalogueDetail';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/musee" element={<Museum />} />
           <Route path="/ateliers" element={<Workshops />} />
           <Route path="/catalogues" element={<Catalogues />} />
+          <Route path="/catalogue/:id" element={<CatalogueDetail />} />
           <Route path="/famille" element={<Family />} />
           <Route path="/scandale" element={<UNScandal />} />
           <Route path="/expertises" element={<Expertises />} />

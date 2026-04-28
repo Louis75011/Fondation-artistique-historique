@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { BookOpen, Search, Layers } from 'lucide-react';
+import { ARTISTS } from '../constants';
 
 export default function Catalogues() {
   const artists = [
@@ -37,9 +39,12 @@ export default function Catalogues() {
             <div className="absolute inset-0 p-8 flex flex-col justify-end text-white">
               <span className="text-[10px] uppercase tracking-[0.3em] text-accent mb-2 font-bold">{artist.status}</span>
               <h3 className="text-3xl font-serif mb-4 leading-tight">{artist.name}</h3>
-              <button className="text-xs uppercase tracking-widest border border-white/20 px-6 py-3 hover:bg-white hover:text-ink transition-all">
+              <Link 
+                to={`/catalogue/${ARTISTS.find(a => a.name === artist.name)?.id}`}
+                className="text-xs uppercase tracking-widest border border-white/20 px-6 py-3 hover:bg-white hover:text-ink transition-all inline-block text-center"
+              >
                 Consulter
-              </button>
+              </Link>
             </div>
           </motion.div>
         ))}

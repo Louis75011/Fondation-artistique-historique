@@ -19,7 +19,7 @@ export default function Museum() {
             className="aspect-square bg-accent/5 overflow-hidden group border border-accent/20"
           >
             <img 
-              src="https://images.unsplash.com/photo-1544923246-77307dd654ca?auto=format&fit=crop&q=80&w=600" 
+              src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&q=80&w=600" 
               alt="Intérieur du musée" 
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale"
